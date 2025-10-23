@@ -1,0 +1,74 @@
+.my-special-container {
+	position: relative;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    width: 700px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.my-special-container table {
+    table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+    background-color: #f6f9ee;
+    border-bottom: #f6f9ee 1px solid;
+    border-left: #f6f9ee 1px solid;
+    border-right: #f6f9ee 1px solid;
+    border-top: #f6f9ee 1px solid;
+    overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+.my-special-container th,
+.my-special-container td {
+    width: 100px;
+	padding: 9px;
+	background-color: rgba(115, 146, 169, 0.5);
+	/* background-color: rgba(73, 160, 157, 1); */
+	color: #fff;
+    border-bottom: #7396aa 1px solid;
+    border-left: #7396aa 1px solid;
+    border-right: #7396aa 1px solid;
+    border-top: #7396aa 1px solid;
+}
+
+.my-special-container .td1 {
+    width: auto;
+	padding: 9px;
+	/* background-color: rgba(172, 37, 37, 0.2); */
+    /* background-color: rgba(255,255,255,0.2); */
+    background-color: rgba(116, 145, 169, 0.7);
+    color: #fff;
+    border-bottom: #7396aa 1px solid;
+    border-left: #7396aa 1px solid;
+    border-right: #7396aa 1px solid;
+    border-top: #7396aa 1px solid;
+}
+
+.my-special-container th {
+	text-align: left;
+}
+
+.my-special-container thead th {
+	background-color: #55608f;
+}
+
+.my-special-container tbody tr:hover {
+	background-color: rgba(115, 146, 169, 0.8);
+}
+
+.my-special-container tbody td {
+	position: relative;
+}
+
+.my-special-container tbody td:hover::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -9999px;
+	bottom: -9999px;
+	background-color: rgba(255,255,255,0.2);
+	z-index: -1;
+}

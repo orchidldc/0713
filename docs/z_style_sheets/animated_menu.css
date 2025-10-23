@@ -1,0 +1,184 @@
+.container {
+    align-items: fixed-start;
+
+    font-family: 'Lato', sans-serif;
+    /* background: #f3f3ef; */
+    background: transparent;
+    color: RGBA(67, 83, 99, 1);
+    margin: 0 auto;
+    width: 750px;
+    max-width: 750px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.container h3 {
+    padding: 1.8rem 0;
+    font-size: 1.6rem !important;
+    color: #0086B5;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.container h4 {
+    font-size: 1.19rem !important;
+    color: #0086b5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container nav {
+    -webkit-box-flex: auto;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    position: relative;
+    padding: .125rem .6152rem 1.6125rem;
+}
+
+.container li a {
+    text-decoration: none;
+    color: RGBA(67, 83, 99, 1);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    width: 90%;
+    height: 3.26rem;
+    display: flex;
+}
+
+.container ul:hover a {
+    opacity: .8;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+.container ul a {
+    display: block;
+    position: relative;
+    padding: .01rem .5rem 2.5rem;
+    -webkit-transition: -webkit-transform .22s, box-shadow .22s;
+    transition: transform .22s, box-shadow .22s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    user-drag: none;
+    box-shadow: 0 0 0 -.25rem rgba(0, 0, 0, .1);
+    /* list-style-type: lower-latin !important; */
+}
+
+.container ul {
+    /* list-style-type: lower-roman; */
+    list-style-type: disc;
+}
+
+
+.container ul a:focus,
+.container ul a:hover {
+    outline: 0;
+    box-shadow: 0 .5rem 0 -.25rem rgba(0, 0, 0, .1);
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    -webkit-transition: -webkit-transform .088s, box-shadow .088s;
+    transition: transform .088s, box-shadow .088s;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Specific background colors for each link */
+.container .menu a:nth-child(1) {
+    background: #f3f3ef;
+}
+
+.container .menu a:nth-child(2) {
+    background: #94c1db;
+}
+
+.container .menu a:nth-child(3) {
+    background: #94bddb;
+}
+
+.container .menu a:nth-child(4) {
+    background: #94b9db;
+}
+
+.container .menu a:nth-child(5) {
+    background: #94b5db;
+}
+
+.container .menu a:nth-child(6) {
+    background: #94b2db;
+}
+
+.container .menu a:nth-child(6):hover {
+    cursor: pointer;
+}
+
+.container .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-1deg);
+        transform: perspective(400px) rotateX(-1deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotateX(1deg);
+        transform: perspective(400px) rotateX(1deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        -ms-transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-1deg);
+        -ms-transform: perspective(400px) rotateX(-1deg);
+        transform: perspective(400px) rotateX(-1deg);
+    }
+
+    70% {
+        -webkit-transform: perspective(400px) rotateX(1deg);
+        -ms-transform: perspective(400px) rotateX(1deg);
+        transform: perspective(400px) rotateX(1deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        -ms-transform: perspective(400px) rotateX(0deg);
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+.container .flipInX {
+    -webkit-backface-visibility: visible !important;
+    -ms-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+}

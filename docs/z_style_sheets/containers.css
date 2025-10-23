@@ -1,0 +1,139 @@
+/* 1. container for key takeaways */
+.container_k {
+    font-family: 'Arial', sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    padding: 20px;
+    position: relative;
+}
+
+.container_k::before,
+.container_k::after {
+    content: '';
+    position: absolute;
+    border-color: #f36c3b;
+    border-style: solid;
+}
+
+.container_k::before {
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 0;
+    border-width: 2px 0 0 0;
+}
+
+.container_k::after {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 20%;
+    border-width: 0 0 0 2px;
+}
+
+.container_k .right-border::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20%;
+    border-right: 2px solid #f36c3b;
+}
+
+.container_k .bottom-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    border-bottom: 2px solid #f36c3b;
+}
+
+.key-takeaways {
+    /* border-top: 3px solid #ff6a6a; */
+    padding-top: -10px;
+}
+
+.key-takeaways h3 {
+    font-size: 10px;
+    color: #100b0bbf;
+    margin-bottom: -10px;
+    margin-left: 20px;
+}
+
+.key-takeaways ul {
+    list-style: square;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+.key-takeaways ul li {
+    /* background: #f9f9f9; */
+    margin-bottom: 10px;
+    padding: 10px;
+    /* border-left: 3px solid #ff6a6a; */
+}
+
+.key-takeaways .ul1 {
+    list-style: inside;
+    padding: 20px;
+    margin-top: -10px;
+    margin-bottom: 3px;
+}
+
+.key-takeaways .ul1 .li1 {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding: 8px;
+}
+
+
+/* 2. container with animated border */
+.div1 {
+    width: 600px;
+    height: 200px;
+    position: relative;
+    border: 1px solid #0b7ffe;
+}
+
+.div1::before,
+.div1::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    animation: div1Ani 1500ms infinite linear;
+}
+
+.div1::before {
+    top: -5px;
+    left: -5px;
+    border-top: 1px solid #0b7ffe;
+    border-left: 1px solid #0b7ffe;
+}
+
+.div1::after {
+    right: -5px;
+    bottom: -5px;
+    border-bottom: 1px solid #0b7ffe;
+    border-right: 1px solid #0b7ffe;
+}
+
+@keyframes div1Ani {
+    0% {
+        width: 30px;
+        height: 30px;
+    }
+
+    50% {
+        width: calc(100% + 9px);
+        height: calc(100% + 9px);
+    }
+
+    100% {
+        width: 30px;
+        height: 30px;
+    }
+}
